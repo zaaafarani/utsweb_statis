@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Wayang</title>
+    <link rel="stylesheet" type="text/css" href="UTSWeb.css">
+    <script src="https://kit.fontawesome.com/62abb6a331.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="Images/logo wayang.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Montaga&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Barriecito&family=Bellefair&family=Cormorant+Upright:wght@300;400;500;600;700&family=Dokdo&family=Playpen+Sans:wght@100..800&family=Rubik+Burned&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="Images/logo wayang.png" alt="Logo" height="100">
+        </div>
+        <ul>
+          <li><a href="UTSWeb.html">Beranda</a></li>
+          <li class="dropdown">
+            <a href="#">Tentang Kami</a> 
+            <div class="dropdown-content">
+                <a href="sejarah.html">Sejarah Museum Wayang</a>
+                <a href="visimisi.html">Visi, Misi, Tujuan, dan Fungsi</a>
+              </div>
+          </li>
+          <li><a href="koleksi.html">Koleksi</a></li>
+          <li class="dropdown">
+            <a href="#">Publikasi</a>
+            <div class="dropdown-content">
+              <a href="artikel.html">Artikel</a>
+              <a href="https://artsandculture.google.com/story/virtual-tour-of-museum-wayang/5wKy-GlujogWIA" target="_blank">Google Art</a>
+              <a href="galeri.html">Galeri</a>
+            </div>
+          </li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+  </div>
+        <div class="search-container">
+          <input type="text" placeholder="Pencarian...">
+          <i class="fas fa-search search-icon"></i>
+      </div>
+      </nav>
+        
+      <div class="hero">
+        <div class="hero-content">
+        <div>
+            <span class="museum-title">Museum</span>
+            <br>
+            <span class="content-title">Wayang</span>
+            <p class="content">
+            Berbagai koleksi wayang yang terbuat dari kayu, kulit, dan bahan 
+            lainnya dapat ditemukan di Museum Wayang. Memamerkan berbagai jenis wayang 
+            dari berbagai daerah di Indonesia, dan dari mancanegara. 
+            <br>
+            <br>Selain itu, terdapat teater di dalam museum tempat pertunjukan Wayang tradisional digelar. 
+            Pengunjung dapat menyaksikan seni yang memikat ini secara langsung, lengkap dengan musik gamelan, 
+            cerita tradisional, dan manipulasi rumit dari boneka-boneka untuk menceritakan epik-epik kuno 
+            dan cerita rakyat.
+          </p>
+        </div>
+        </div>
+      </div>
+    <!-- Tombol untuk membuka sidebar -->
+  <button class="open-btn" onclick="toggleSidebar()"><img src="Images/sidebar.png"></button>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()">x</button>
+  <div class="zafa">
+    <img src="Images/zafa.jpeg" width="100%" style= "border-radius: 250px; border: 2px dashed white;">
+  </div>
+    <h2>Owner Profile</h2>
+    <p>Zaafarani Ramadhanti </p>
+    <p>11220251000061</p>
+    <p>perempuan blasteran surga yang hobinya merangkai kata</p>
+    <a href="https://www.instagram.com/zaafaranr/" style="color: black; align-items: center;" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="content">
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+  </script>
+      <!-- Box Container -->
+    <div class="box-container">
+      <div class="box-left">
+        <p><strong>Lokasi</strong><br>
+          Masih berada dalam kawasan wisata Kota Tua, tepatnya di Jl. Pintu Besar 
+          Utara No.27, Daerah Khusus Ibukota Jakarta 11110
+        </p>
+        <p id="lokasi"><strong>Cara Menuju Lokasi</strong></p>
+                <button type="button" onclick='document.getElementById("lokasi").innerHTML= 
+                "~Mudah untuk mencapai museum ini, karena terletak di salah satu destinasi paling diminati di kota. Jika Anda menggunakan kereta komuter dari Stasiun Manggarai, tujuhlah ke stasiun Jakarta Kota, dari sana cukup dengan berjalan selama 7-10 menit untuk mencapai museum. Alternatifnya, Anda bisa memilih bus TransJakarta. Dari halte Dukuh Atas, naiklah bus menuju halte Kota, lalu berjalan selama 10-15 menit untuk mencapai museum.~"'
+                >Petunjuk Ke Museum</button>
+      </div>
+      <div class="box-right">
+          <p><strong>Jam Operasional</strong><br>
+              Selasa-Minggu | 9.00 WIB - 15.00 WIB<br>
+              Tutup Senin, Libur Nasional, dan Cuti Bersama
+          </p>
+      </div>
+  </div>
+  <div class="banner">
+    <img src="Images/aksesoris.png" alt="Museum Image" class="animated-image"> <!-- Ganti dengan gambar Anda -->
+    <div class="banner-text">
+        Rencanakan <span>Kunjungan Museum</span> Anda <span>Sekarang!</span>
+    </div>
+    <a href="reservasi.html" class="banner-button">Reservasi</a>
+</div>
+
+<div class="gallery">
+  <h1>Galeri</h1>
+  <a href="galeri.html" class="temukan">Temukan lebih banyak foto museum wayang</a>
+  <div class="grid">
+    <div class="item"><img src="Images/1.jpg" alt="Image 1"></div>
+    <div class="item"><img src="Images/10.jpg" alt="Image 2"></div>
+    <div class="item"><img src="Images/2.jpg" alt="Image 3"></div>
+    <div class="item"><img src="Images/3.jpg" alt="Image 4"></div>
+    <div class="item"><img src="Images/5.jpg" alt="Image 5"></div>
+    <div class="item"><img src="Images/6.2.jpg" alt="Image 6"></div>
+    <div class="item"><img src="Images/6.jpg" alt="Image 7"></div>
+    <div class="item"><img src="Images/7.jpg" alt="Image 8"></div>
+    <div class="item"><img src="Images/8.jpg" alt="Image 9"></div>
+    <div class="item"><img src="Images/9.jpg" alt="Image 10"></div>
+  </div>
+</div>
+<div class="container">
+  <h1>Artikel</h1>
+  <a href="artikel.html" class="lihat-lebih">Lihat Lebih Banyak</a>
+  <div class="cards">
+      <div class="card">
+          <img src="Images/sejarah museum.jpg" alt="Sejarah Museum Wayang">
+          <h2>Sejarah Museum Wayang Kota Tua, Dulunya Gereja Pertama di Batavia</h2>
+          <p>"Dulu, bangunan (Museum Wayang) adalah gereja pertama di Batavia, 
+            tetapi banyak yang sudah berubah," kata Ira Latief, pemandu Wisata 
+            Kreatif Jakarta saat memimpin Kompas.com Travel Walking Tour pada Minggu (30/6/2024).
+            Dahulu, gedung-gedung dekat tempat ibadah, 
+            umum dijadikan lokasi makam orang-orang penting.</p>
+          <a href="https://travel.kompas.com/read/2024/07/24/080800327/sejarah-museum-wayang-kota-tua-dulunya-gereja-pertama-di-batavia" 
+          target="_blank" class="read-more">Read More</a>
+      </div>
+      <div class="card">
+          <img src="Images/berita.jpg" alt="Wayang">
+          <h2>Wayang Bukan Sekadar Boneka Tak Bernyawa, Banyak Cerita di Baliknya</h2>
+          <p>Pernyataan itu dirangkum dalam sebuah artikel di Majalah HAI berjudul 
+            "Wayang, bukan sekedar boneka tak bernyawa" yang tayang pada 1981 lalu. 
+            Kesimpulan itu dia dapat setelah sekian lama mendalami seni wayang di Indonesia 
+            serta membandingkannya dengan seni-seni boneka di negeri-negeri lainnya.</p>
+          <a href="https://www.msn.com/id-id/berita/other/wayang-bukan-sekadar-boneka-tak-bernyawa-banyak-cerita-di-baliknya/ar-AA1tw5iR" 
+          target="_blank" class="read-more">Read More</a>
+      </div>
+      <div class="card">
+          <img src="Images/perawatan wayang.jpeg" alt="Perawatan">
+          <h2>Melihat Perawatan Koleksi Museum Wayang dan Tekstil</h2>
+          <p>Koleksi Museum Wayang dan Museum Tekstil mendapat perawatan. 
+            Hal ini guna menjaga koleksi agar tidak rusak.
+            Perawatan terhadap sejumlah barang yang termasuk dalam kategori 
+            objek diduga cagar budaya (ODCB) tersebut bertujuan untuk tetap menjaga keutuhan
+            dan menghindari terjadinya kerusakan karena usia benda.</p>
+          <a href="https://www.detik.com/edu/foto/d-7228223/melihat-perawatan-koleksi-museum-wayang-dan-tekstil/2" 
+          target="_blank"  class="read-more">Read More</a>
+      </div>
+  </div>
+</div>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-section">
+          <img src="Images/logo wayang.png" alt="Logo Museum" class="footer-logo">
+          <p>KEMENTERIAN PENDIDIKAN, KEBUDAYAAN, RISET, DAN TEKNOLOGI</p>
+          <p>DIREKTORAT JENDERAL KEBUDAYAAN</p>
+          <p>MUSEUM DAN CAGAR BUDAYA</p>
+          <p>© 2024</p>
+      </div>
+      <div class="footer-section">
+      </div>
+      <div class="footer-section">
+          <h4>Hubungi Kami</h4>
+          <p>Museum Wayang Jakarta</p>
+          <p>Unit Pengelola Museum Seni</p>
+          <p>Dinas Pariwisata dan Kebudayaan Provinsi DKI Jakarta</p>
+          <p>Jalan Pintu Besar Utara Nomor 27, Pinangsia, Kota Tua, Jakarta Barat.</p>
+          <p><a href="tel:(021)6929560">(021)6929560</a></p>
+          <p><a href="mailto:museumwayang@gmail.com">museumwayang@gmail.com</a></p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <ul class="social-media">
+          <li><a href="https://www.youtube.com/@museumwayang75" target="_blank" class="icon youtube"><i class="fa-brands fa-youtube"></i></a></li>
+          <li> <a href="https://www.instagram.com/wayangmuseum/" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://x.com/MuseumWayang" target="_blank" class="icon twitter">
+            <i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="https://www.tiktok.com/@wayangmuseum" target="_blank" class="icon tiktok"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="https://www.facebook.com/wayangmuseum/"target="_blank" class="icon facebook"><i class="fa-brands fa-facebook"></i></a></li>
+      </ul>
+  </div>
+</footer>
+</body>
+</html>
